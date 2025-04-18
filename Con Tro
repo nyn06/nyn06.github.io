@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a[] = {4, 3, 1, -5, 7, 2};  // Mảng có 6 phần tử, chỉ số từ 0 đến 5
+    int *p;
+
+    p = &a[3];     // p trỏ đến phần tử thứ 4 trong mảng (a[3] = -5)
+    p = p - 2;     // p lùi về 2 ô => trỏ đến a[1] (giá trị là 3)
+
+    cout << *p;    // In giá trị tại vị trí a[1] => 3
+
+    return 0;
+}
